@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 /**
  * main - starting point
  *
- * return : zero
+ * Description: print a sentence using puts
+ *
+ * Return: Always 0 (success
  */
 int main(void)
 {
