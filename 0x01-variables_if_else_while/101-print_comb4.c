@@ -5,7 +5,7 @@
  *
  * Description: print three digits
  *
- * Rerturn: always 0
+ * Return: always 0
  */
 int main(void)
 {
