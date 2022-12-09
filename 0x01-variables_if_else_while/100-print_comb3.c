@@ -6,23 +6,24 @@
  *
  * Return: 0 (succes)
  */
-int main()
+int main(void)
 {
-	int i, k;
-	int j = 0;
+	int dig1, dig2;
 
-	for (i = 0; i < 10; i++)
-		for (k = 1; k < 10; k++)
+	for (dig1 = 0; dig1 < 9; dig1++)
+	{
+		for (dig2 = dig1 + 1; dig2 < 10; dig2++)
 		{
-			if (k > j)
-			{
-				putchar(i + '0');
-				putchar(k + '0');
-				putchar(',');
-				putchar(' ');
-				j++;
-			}
+			putchar((dig1 % 10) + '0');
+			putchar((dig2 % 10) + '0');
+
+			if (dig1 == 8 && dig2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
+	}
 	putchar('\n');
 	return (0);
 }
