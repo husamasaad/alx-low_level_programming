@@ -12,7 +12,7 @@ int main()
 	int j = 0;
 
 	for (i = 0; i < 10; i++)
-		for (int k = 1; k < 10; k++)
+		for (k = 1; k < 10; k++)
 		{
 			if (k > j)
 			{
