@@ -16,7 +16,7 @@ int main(void)
 		if (i == 9)
 			break;
 		putchar(',');
-		putchar(0);
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
