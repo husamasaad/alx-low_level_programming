@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	int l,u;
-	
+	int l, u;
+
 	for (l = 'a'; l <= 'z'; ++l)
 		putchar(l);
 	for (u = 'A'; u <= 'Z'; ++u)
