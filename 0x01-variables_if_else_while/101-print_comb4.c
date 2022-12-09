@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints three digit comb.
+ * main - entry point
+ *
+ * Description: print three digits
  *
  * Rerturn: always 0
  */
