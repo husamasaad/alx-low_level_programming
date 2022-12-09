@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - entry point
- * 
- * Description: advanced task
- *
- * Return: 0 (succes)
- */
+* main - entry point
+*
+* Description: advanced task
+*
+* Return: 0 (succes)
+*/
 int main(void)
 {
 	int dig1, dig2;
