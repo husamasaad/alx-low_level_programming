@@ -1,6 +1,6 @@
 #include "main.h"
 void empty_digit(int num);
-void end_of_line(int num, n);
+void end_of_line(int num, int n);
 /**
  * print_times_table - prints time table 9 time
  * Return: void
