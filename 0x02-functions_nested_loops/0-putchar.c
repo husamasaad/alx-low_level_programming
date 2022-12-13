@@ -11,7 +11,7 @@ int main (void)
 	char putchr[] = "_putchar";
 	int i = 0;
 
-	while (puthcr[i] != '\0')
+	while (putchr[i] != '\0')
 	{
 		_putchar(putchr[i]);
 		i++;
