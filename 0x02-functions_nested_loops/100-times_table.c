@@ -9,7 +9,7 @@ void print_times_table(int n)
 
 	if (n > 15)
 	{
-		break;
+		return;
 	}
 	for (row = 0; row < n + 1; row++)
 	{
