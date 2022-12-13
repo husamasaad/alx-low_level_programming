@@ -18,7 +18,7 @@ void print_times_table(int n)
 	{
 		for (num = 0; num < n + 1; num++)
 		{
-			product = (num * row);		
+			product = (num * row);
 			if (product / 100 > 0)
 			{
 				_putchar((product / 100) + '0');
