@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	int l;
 
-	for (let l = 'a'; l <= 'z'; l++)
+	for (l = 'a'; l <= 'z'; l++)
 	{
 		if ( c == l)
 		{
