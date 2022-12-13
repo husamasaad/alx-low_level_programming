@@ -18,7 +18,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
+				if (num > 0)
+				{
+					_putchar(' ');
+				}
 			}
 			_putchar((product % 10) + '0');
 			if (num != 9)
