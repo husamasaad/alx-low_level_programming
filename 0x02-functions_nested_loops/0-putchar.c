@@ -8,13 +8,12 @@
  */
 int main (void)
 {
-	char pt[] = "_putchar";
-	int i = 0;
+	char *putchr = "_putchar";
 
-	while (i != '\0')
+	while (*putchr)
 	{
-		_putchar(*pt);
-		i++;
+		_putchar(*putchr);
+		*putchr++;
 	}
 	_putchar('\n');
 	return (0);
