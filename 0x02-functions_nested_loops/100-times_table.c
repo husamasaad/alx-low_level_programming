@@ -3,6 +3,7 @@ void empty_digit(int num);
 void end_of_line(int num, int n);
 /**
  * print_times_table - prints time table 9 time
+ * @n: max range
  * Return: void
  */
 void print_times_table(int n)
@@ -47,7 +48,11 @@ void print_times_table(int n)
 		_putchar('\n');
 	}
 }
-
+/**
+ * empty_digit - prints empty space
+ * @num: the current index number
+ * Return: void
+ */
 void empty_digit(int num)
 {
 	if (num > 0)
@@ -56,6 +61,12 @@ void empty_digit(int num)
 	}
 }
 
+/**
+ * end_of_line - check if it is the end of line
+ * @num: current index number
+ * @n : max of range
+ * Return: void
+ */
 void end_of_line(int num, int n)
 {
 	if (num != n)
