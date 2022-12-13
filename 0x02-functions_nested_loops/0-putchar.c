@@ -13,7 +13,7 @@ int main (void)
 	while (*putchr)
 	{
 		_putchar(*putchr);
-		*putchr++;
+		putchr++;
 	}
 	_putchar('\n');
 	return (0);
