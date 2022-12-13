@@ -24,7 +24,7 @@ void print_times_table(int n)
 				}
 			}
 			_putchar((product % 10) + '0');
-			if (num != 9)
+			if (num != n)
 			{
 				_putchar(',');
 				_putchar(' ');
