@@ -5,14 +5,16 @@
  */
 int main(void)
 {
-	unsigned long int t0 = 0, t1 = 1, s;
+	unsigned long int n1 = 0, n2 = 1, n3;
 
 	int i;
+	
+	printf("%lu, %lu, ", n1, n2);
 
-	for (i = 1; i <= 94; i++)
+	for (i = 2; i <= 98; i++)
 	{
-		s = t0 + t1;
-		if (i != 94)
+		n3 = n1 + n2;
+		if (i < 98)
 		{
 			printf("%lu, ", s);
 		}
@@ -20,8 +22,8 @@ int main(void)
 		{
 			printf("%lu\n", s);
 		}
-		t0 = t1;
-		t1 = s;
+		n1 = n2;
+		n2 = n3;
 	}
 	return (0);
 }
