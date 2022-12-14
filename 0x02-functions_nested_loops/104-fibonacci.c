@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	unsigned long int n1 = 0, n2 = 1, n3, l = 1000000000, h1, h2;
-	unsigned long int half_n11, half_n12, half_n21, half_n22, sum;
+	unsigned long int n1 = 0, n2 = 1, sum, l = 1000000000, h1, h2;
+	unsigned long int half_n11, half_n12, half_n21, half_n22;
 	int i;
 
 	for (i = 0; i <= 92; i++)
