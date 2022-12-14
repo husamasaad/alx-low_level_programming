@@ -5,11 +5,9 @@
  */
 int main(void)
 {
-	unsigned long int n1 = 0, n2 = 1, n3;
+	int n1 = 0, n2 = 1, n3, i;
 
-	int i;
-	
-	printf("%lu, %lu, ", n1, n2);
+	printf("%d, %d, ", n1, n2);
 
 	for (i = 2; i <= 98; i++)
 	{
