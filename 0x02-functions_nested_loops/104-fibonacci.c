@@ -16,11 +16,11 @@ int main(void)
 		n3 = n1 + n2;
 		if (i < 98)
 		{
-			printf("%lu, ", s);
+			printf("%lu, ", n3);
 		}
 		else
 		{
-			printf("%lu\n", s);
+			printf("%lu\n", n3);
 		}
 		n1 = n2;
 		n2 = n3;
