@@ -5,32 +5,42 @@
  */
 int main(void)
 {
-	unsigned long int bef = 1, aft = 2, l = 1000000000;
-	unsigned long int bef1, bef2, aft1, aft2;
+	unsigned long int n1 = 0, n2 = 1, n3, l = 1000000000, h1, h2;
+	unsigned long int half_n11, half_n12, half_n21, half_n22, sum;
 	int i;
 
-	printf("%lu", bef);
-
-	for (i = 1; i <= 91; i++)
+	for (i = 0; i <= 92; i++)
 	{
-		printf(", %lu", aft);
-		aft += bef;
-		bef = aft - bef;
+		sum = n1 + n2;
+		printf("%lu, ", sum);
+
+		n1 = n2;
+		n2 = sum;
 	}
 
-	bef1 = (bef /l);
-	bef2 = (bef % l);
-	aft1 = (aft / l);
-	aft2 = (aft % l);
+	half_n11 = (n1 /l);
+	half_n12 = (n1 % l);
+	half_n21 = (n2 / l);
+	half_n22 = (n2 % l);
 
-	for (i = 92; i < 98; i++)
+	for (i = 93; i < 99; i++)
 	{
-		printf(", %lu", aft1 + (aft2 / l));
-		printf("%lu", aft2 % l);
-		aft1 = aft1 + bef1;
-		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef2;
-		bef2 = aft2 - bef2;
+		h1 = half_n11 + half_n21;
+		h2 = half_n12 + half_n22;
+		if (half_n12 + half_n22 > 9999999999)
+		{
+			h1 += 1;
+			h2 %= l;
+		}
+
+		printf("%lu%lu", h1, h2);
+		if (i < 98)
+			printf(", ");
+
+		half_n11 = half_n21;
+		half_n12 = half_n22;
+		half_n21 = h1;
+		half_n22 = h2;
 	}
 	putchar('\n');
 	return (0);
