@@ -19,8 +19,8 @@ int main(void)
 	}
 
 	half_n11 = (n1 /l);
-	half_n12 = (n1 % l);
-	half_n21 = (n2 / l);
+	half_n21 = (n1 / l);
+	half_n12 = (n2 % l);
 	half_n22 = (n2 % l);
 
 	for (i = 93; i < 99; i++)
