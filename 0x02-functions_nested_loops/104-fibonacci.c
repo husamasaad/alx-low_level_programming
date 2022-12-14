@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	unsigned long count, i, j, k;
+	unsigned long i, j, k;
 	unsigned long m, n, p, carry;
 
 	int count = 0;
@@ -22,7 +22,7 @@ int main(void)
 	i = i / 1000;
 	n = j % 1000;
 	n = j % 1000;
-	while (count <= 98)
+	while (count < 98)
 	{
 		carry = (m + n) / 1000;
 		p = (m + n) - carry * 1000;
@@ -34,11 +34,12 @@ int main(void)
 		if (p >= 100)
 			printf("%lu%lu", k, p);
 		else
-			printf("%lu0%lu", k, p);
+			printf("%lu%lu", k, p);
 		if (count != 98)
 			printf(", ");
 		count++;
 	}
 	putchar('\n');
+
 	return (0);
 }
