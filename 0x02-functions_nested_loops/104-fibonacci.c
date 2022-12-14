@@ -19,7 +19,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%lu...\n", n3);
+			printf("%lu\n", n3);
 		}
 		n1 = n2;
 		n2 = n3;
