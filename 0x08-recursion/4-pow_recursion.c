@@ -6,7 +6,7 @@
  * @y: the times to multiply the value
  * Return: the value multiplied y times
  */
-int _pow_recurshion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 		return (-1);
