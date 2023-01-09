@@ -46,5 +46,5 @@ char *_strdup(char *str)
 		ptr[x] = str[x];
 		x++;
 	}
-	return (ptr)
+	return (ptr);
 }
