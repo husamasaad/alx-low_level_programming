@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _calloc - ...
+ * *_calloc - ...
  * @nmemb: number of members
  * @size: size
  *
