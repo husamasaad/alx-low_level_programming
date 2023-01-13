@@ -5,7 +5,8 @@
  * _calloc - ...
  * @nmemb: number of members
  * @size: size
- * Return: ...
+ *
+ * Return: ....
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -26,6 +27,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		p[i] = 0;
 		i++;
 	}
-
 	return (p);
 }
