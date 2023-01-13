@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * *_calloc - ...
+ * _calloc -  function that allocates memory for an array
  * @nmemb: number of members
  * @size: size
  *
- * Return: ....
+ * Return: pointer to allocated memory or 0
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i = 0, l =0;
+	int i = 0;
+	int l =0;
 	char *p;
 
 	if (nmemb == 0 || size == 0)
