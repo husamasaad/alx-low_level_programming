@@ -1,47 +1,51 @@
 #include <stdio.h>
+
 /**
- * main - print the first 98 fibonacci numbers.
- * Return: void
+ * main - Prints the first 98 Fibonacci numbers, starting with
+ *        1 and 2, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	unsigned long int n1 = 0, n2 = 1, sum, l = 1000000000, h1, h2;
-	unsigned long int half_n11, half_n12, half_n21, half_n22;
-	int i;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+	unsigned long half1, half2;
 
-	for (i = 0; i <= 92; i++)
+	for (count = 0; count < 92; count++)
 	{
-		sum = n1 + n2;
+		sum = fib1 + fib2;
 		printf("%lu, ", sum);
 
-		n1 = n2;
-		n2 = sum;
+		fib1 = fib2;
+		fib2 = sum;
 	}
 
-	half_n11 = (n1 /l);
-	half_n21 = (n1 / l);
-	half_n12 = (n2 % l);
-	half_n22 = (n2 % l);
+	fib1_half1 = fib1 / 10000000000;
+	fib2_half1 = fib2 / 10000000000;
+	fib1_half2 = fib1 % 10000000000;
+	fib2_half2 = fib2 % 10000000000;
 
-	for (i = 93; i < 99; i++)
+	for (count = 93; count < 99; count++)
 	{
-		h1 = half_n11 + half_n21;
-		h2 = half_n12 + half_n22;
-		if (half_n12 + half_n22 > 9999999999)
+		half1 = fib1_half1 + fib2_half1;
+		half2 = fib1_half2 + fib2_half2;
+		if (fib1_half2 + fib2_half2 > 9999999999)
 		{
-			h1 += 1;
-			h2 %= l;
+			half1 += 1;
+			half2 %= 10000000000;
 		}
 
-		printf("%lu%lu", h1, h2);
-		if (i < 98)
+		printf("%lu%lu", half1, half2);
+		if (count != 98)
 			printf(", ");
 
-		half_n11 = half_n21;
-		half_n12 = half_n22;
-		half_n21 = h1;
-		half_n22 = h2;
+		fib1_half1 = fib2_half1;
+		fib1_half2 = fib2_half2;
+		fib2_half1 = half1;
+		fib2_half2 = half2;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
